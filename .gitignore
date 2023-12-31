@@ -22,7 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-royalerest\public\favicon.ico
-royalerest\public\logo192.png
-royalerest\public\logo512.png
-royalerest\public\manifest.json
+
+./src/Assets/Images
