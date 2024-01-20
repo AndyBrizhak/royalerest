@@ -17,11 +17,15 @@ function MenuItemList() {
     }
   }, [isLoading]);
 
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div className='container row'> 
-    {data.result.length > 0 &&
-        data.result.map((menuItem: menuItemModel, index: number) => (
-    ))}
+    {data.result.length > 0 && 
+    data.result.map((menuItem: menuItemModel, index: number) => (
+    <MenuItemCard menuItem={menuItem} key={index}/> ))}
     </div>)
 }
 
